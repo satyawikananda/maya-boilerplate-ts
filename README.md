@@ -1,6 +1,6 @@
 # Maya Boilerplate TS
 
-This is my javascript boilerplate for create a project TS for faster development.
+This is my typescript boilerplate for create a typescript project for faster development.
 
 # License
 

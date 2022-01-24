@@ -2,10 +2,7 @@
   "compilerOptions": {
     "strict": false,
     "esModuleInterop": true,
-    "lib": [
-      "esnext",
-      "DOM"
-    ],
+    "lib": ["esnext", "DOM"],
     "target": "ES2018",
     "module": "commonjs",
     "sourceMap": false,

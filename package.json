@@ -2,28 +2,31 @@
   "name": "maya-boilerplate-ts",
   "version": "1.0.0",
   "description": "Boilerplate to create lib with ts",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "scripts": {
-    "test": "jest"
+    "build": "tsup",
+    "dev": "tsup --watch src",
+    "test": "vitest",
+    "test:watch": "vitest watch",
+    "test:coverage": "vitest --coverage",
+    "prettier": "prettier --check '**/*.{ts,js}'"
   },
   "keywords": [
     "boilerplate",
     "boilerplate-ts"
   ],
+  "types": "./dist/index.d.ts",
   "author": "Satya Wikananda",
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^26.0.22",
+    "@satyawikananda/prettier-config": "^0.0.2",
     "@types/node": "^14.14.41",
-    "@typescript-eslint/eslint-plugin": "^4.22.0",
-    "@typescript-eslint/parser": "^4.22.0",
-    "eslint": "^7.25.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "jest": "^26.6.3",
-    "prettier": "^2.2.1",
-    "ts-jest": "^26.5.5",
+    "c8": "^7.11.0",
+    "prettier": "^2.5.1",
     "ts-node": "^9.1.1",
-    "typescript": "^4.2.4"
+    "tsup": "^5.11.11",
+    "typescript": "^4.2.4",
+    "vitest": "^0.2.0"
   }
 }
